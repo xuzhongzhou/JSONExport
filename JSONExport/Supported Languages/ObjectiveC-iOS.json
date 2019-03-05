@@ -99,7 +99,7 @@
       "forEachArrayOfCustomTypeProperty": "\t[aCoder encodeObject:self.<!VarName!> forKey:<!ConstKeyName!>];\n",
       "forEachCustomTypeProperty": "\t[aCoder encodeObject:self.<!VarName!> forKey:<!ConstKeyName!>];\n",
       "returnStatement": "",
-      "body": "\t[super encodeWithCoder:coder];\n",
+      "body": "",
       "comment": "\n#pragma mark - NSCoding\n\n",
       "bodyStart": " {\n"
     },
@@ -111,7 +111,7 @@
       "forEachArrayOfCustomTypeProperty": "\t\tself.<!VarName!> = [aDecoder decodeObjectForKey:<!ConstKeyName!>];\n",
       "forEachCustomTypeProperty": "\t\tself.<!VarName!> = [aDecoder decodeObjectForKey:<!ConstKeyName!>];\n",
       "returnStatement": "\t}\n\treturn self;",
-      "body": "\tself = [super initWithCoder:aDecoder];\n\tif (self) {\n",
+      "body": "\tself = [super init];\n\tif (self) {\n",
       "comment": "",
       "bodyStart": " {\n"
     },
